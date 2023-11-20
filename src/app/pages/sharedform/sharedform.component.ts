@@ -2,10 +2,10 @@ import { Component, Input, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 
 @Component({
-  selector: 'app-input',
-  templateUrl: './input.component.html'
+  selector: 'app-sharedform',
+  templateUrl: './sharedform.component.html'
 })
-export class InputComponent implements OnInit {
+export class SharedformComponent implements OnInit {
   @Input() inputId = '';
   @Input() control!: FormControl;
   @Input() label:string = '';
