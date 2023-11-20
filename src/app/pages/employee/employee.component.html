@@ -107,81 +107,63 @@
               <div class="panel-body">
                 <form [formGroup]="employeeForm">
                   <fieldset class="row justify-content-center ">
-                    <app-input
+                    <app-sharedform
                     [control]="$any(employeeForm.controls['fullName'])"
                     type="text"
                     inputId="fullName"
                     label="FullName"
                     [required] = "true">
-                    </app-input>
+                    </app-sharedform>
 
-                    <app-input
+                    <app-sharedform
                     [control]="$any(employeeForm.controls['nickName'])"
                     type="text"
                     inputId="nickName"
                     label="NickName"
                     [required] = "true">
-                    </app-input>
+                    </app-sharedform>
 
-                    <app-input
+                    <app-sharedform
                     [control]="$any(employeeForm.controls['nationalId'])"
                     type="text"
                     inputId="nationalId"
                     label="National-ID"
                     [required] = "true"
                     >
-                    </app-input>
-                    <app-input
+                    </app-sharedform>
+                    <app-sharedform
                     [control]="$any(employeeForm.controls['address'])"
                     type="text"
                     inputId="address"
                     label="Address"
                     [required] = "true"
                     >
-                    </app-input>
+                    </app-sharedform>
 
-                    <app-input
+                    <app-sharedform
                     [control]="$any(employeeForm.controls['job'])"
                     type="text"
                     inputId="job"
                     label="Job"
                     [required] = "false"
                     >
-                    </app-input>
-                    <app-input
+                    </app-sharedform>
+                    <app-sharedform
                     [control]="$any(employeeForm.controls['primaryPhoneNo'])"
                     type="text"
                     inputId="primaryPhoneNo"
                     label="Primary Number"
                     [required] = "true"
                     >
-                    </app-input>
-
-                    <app-input
-                    [control]="$any(employeeForm.controls['address'])"
+                    </app-sharedform>
+                    <app-sharedform
+                    [control]="$any(employeeForm.controls['secondaryPhoneNo'])"
                     type="text"
-                    inputId="address"
-                    label="Address"
+                    inputId="secondaryPhoneNo"
+                    label="Secondary Number"
                     [required] = "true"
                     >
-                    </app-input>
-
-                    <app-input
-                    [control]="$any(employeeForm.controls['job'])"
-                    type="text"
-                    inputId="job"
-                    label="Job"
-                    [required] = "false"
-                    >
-                    </app-input>
-                    <app-input
-                    [control]="$any(employeeForm.controls['primaryPhoneNo'])"
-                    type="text"
-                    inputId="primaryPhoneNo"
-                    label="Primary Number"
-                    [required] = "true"
-                    >
-                    </app-input>
+                    </app-sharedform>
                   </fieldset>
                 </form>
               </div>
